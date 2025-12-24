@@ -1,16 +1,47 @@
-# React + Vite
+# AI Web Scraper Pro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A powerful, free, client-side web scraping tool built with **React** + **Vite** and **Tailwind CSS**.  
+Extract product data (name, price, discount, category, images) from any e-commerce website (Jumia, SHEIN, Amazon, etc.) with intelligent cleaning, deduplication, and export to JSON/CSV.
 
-Currently, two official plugins are available:
+> **Status:** In active development — full version with multi-page scraping, AI categorization, dynamic content support (Playwright backend), and better proxy rotation coming soon!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features (Current)
 
-## React Compiler
+- Client-side scraping (no server required)
+- Generalized extraction — works on any site with product links
+- Smart price detection (handles $, €, £, Dhs, etc.)
+- Clean name extraction (removes price/discount from titles)
+- Basic category detection (shoes, clothing, appliances...)
+- Search & filter results in beautiful dashboard view
+- Export to JSON & CSV
+- Dark/Light theme toggle
+- Mobile-responsive design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Demo
 
-## Expanding the ESLint configuration
+Live demo coming soon!  
+Stay tuned — deployment on Vercel/Netlify in progress.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Tech Stack
+
+- React (Vite)
+- Tailwind CSS
+- Lucide Icons
+- DOMParser for HTML parsing
+- Proxy rotation for CORS bypass
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/ai-web-scraper-pro.git
+
+# Go to project directory
+cd ai-web-scraper-pro
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
